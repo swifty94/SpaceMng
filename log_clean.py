@@ -30,5 +30,12 @@ class ACSLogHandler(object):
 				logging.info()		
 
 if __name__ == "__main__":
-	mng = ACSLogHandler()
-	mng.remove_old_log(FOLDER,DAYS_COUNT,OLD)
+	while True:
+		try:
+			logging.info('Main loop start')
+			mng = ACSLogHandler()
+			mng.remove_old_log(FOLDER,DAYS_COUNT,OLD)
+			logging.info('Main loop pause')
+			time.sleep(3600)
+		except Exception as e:
+			logging.exception(f'Exception in main loop {e}')

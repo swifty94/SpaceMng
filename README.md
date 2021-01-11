@@ -10,5 +10,5 @@ Installation:
 Usage:
 ---
     ``` Define your constants in settings.py```
-    ``` Linux: python3 log_clean.py ```
-    ``` Windows: start /B python log_clean.py ```    
+    ``` Linux: python3 log_clean.py & ```
+    ``` Windows: start /B python log_clean.py ```
